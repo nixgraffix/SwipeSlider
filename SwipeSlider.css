@@ -1,0 +1,89 @@
+.swipeSlider img, .swipeSlider video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.swipeSlider ul{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+}
+
+.swipeSlider li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 140px;
+    height: 5em;
+    border: 1px solid rgba(0,0,0,0);
+    text-align: center;
+    margin: .5em;
+    font-size: .75em;
+    position: relative;
+}
+
+.swipeSlider li.active {
+    border: 1px solid #fff;
+}
+
+.swipeSlider .stage li.swipeSliderFrame {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: none;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.swipeSlider .swipeSliderViewport ul.stage {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: none;
+    font-size: 0;
+}
+
+.swipeSliderViewport {
+   overflow: hidden;
+}
+
+.swipeSliderViewportInner {
+   overflow-x: auto;
+   overflow-y: hidden;
+}
+
+.swipeSliderViewportInner::-webkit-scrollbar {
+   display: none;
+}
+
+.swipeSliderViewport ul.stage {
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+   border: none;
+   font-size: 0;
+}
+
+.swipeSliderViewport .stage li.swipeSliderFrame {
+   width:100%;
+   height:auto;
+   display: inline-block;
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   border: none;
+   line-height: 0;
+   font-size: 0;
+   vertical-align:middle;
+}
